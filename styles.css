@@ -237,3 +237,29 @@ section[id]{position:relative}
   .hero-copy{margin-bottom:0}
   .hero .button{align-self:flex-start;width:auto;max-width:100%;min-height:40px;margin:26px 0 0;padding:8px 12px;white-space:nowrap}
 }
+
+/* Computadores: seções com altura de tela e rótulos mais legíveis. */
+@media screen and (min-width:1025px) and (pointer:fine){
+  .eyebrow{font-size:clamp(.9rem,1vw,1.05rem)}
+  section[id]{min-height:calc(100svh - 88px);scroll-margin-top:88px}
+  .hero{min-height:calc(100svh - 88px);padding:clamp(48px,7svh,88px) clamp(48px,10vw,160px)}
+  .section{padding:clamp(38px,5svh,68px) clamp(40px,8vw,140px)}
+  .about{gap:clamp(34px,5vw,82px)}
+  .about .section-copy>.eyebrow{font-size:clamp(.9rem,1vw,1.05rem);letter-spacing:.17em;margin-bottom:20px}
+  .about .section-copy>.eyebrow:before{content:"";display:inline-block;width:30px;height:2px;margin:0 11px 4px 0;background:var(--gold)}
+  .about .portrait-placeholder{height:min(68svh,680px);min-height:0;padding:18px 0 0 18px}
+  .about .portrait-frame{height:100%;min-height:0}
+  .services,.process{padding-top:clamp(38px,5svh,68px);padding-bottom:clamp(48px,6svh,78px)}
+  .services .section-heading,.process .section-heading{margin-bottom:clamp(22px,3.2svh,40px)}
+  .service-card{min-height:0;padding:clamp(22px,2vw,30px)}
+  .step{padding:clamp(24px,3svh,34px) clamp(22px,2.2vw,34px)}
+  .contact-banner{min-height:calc(100svh - 88px);padding:clamp(48px,7svh,88px) clamp(36px,7vw,100px)}
+}
+
+/* Os rótulos das seções também ganham leitura em telas touch menores. */
+@media screen and (min-width:641px) and (max-width:1024px) and (min-height:600px) and (pointer:coarse){
+  .eyebrow{font-size:.88rem}
+}
+@media screen and (max-width:640px){
+  .section .eyebrow,.contact-banner .eyebrow{font-size:.74rem}
+}
