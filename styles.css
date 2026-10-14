@@ -203,3 +203,5 @@ section[id]{position:relative}
 }
 .contact-email{font-size:.92rem}
 .contact-email a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.portrait-frame{overflow:hidden}
+.portrait-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 28%}
