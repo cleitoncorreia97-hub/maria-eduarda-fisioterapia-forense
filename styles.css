@@ -34,3 +34,31 @@ section[id]{scroll-margin-top:88px}
   .hero h1{font-size:2.3rem}
   .eyebrow{letter-spacing:.12em}
 }
+
+/* Escala mais enxuta para leitura em telas pequenas */
+@media(max-width:640px){
+  body{font-size:.94rem;line-height:1.58}
+  .site-header{padding:0 16px}
+  .hero{min-height:520px;padding:58px 20px;background-size:auto 88%;background-position:78% center}
+  .hero h1{font-size:clamp(2rem,8.5vw,2.35rem);line-height:1.12;margin-bottom:16px}
+  .hero-copy{font-size:.94rem;margin-bottom:24px}
+  .eyebrow{font-size:.64rem;letter-spacing:.13em;margin-bottom:12px}
+  .section{padding:54px 20px}
+  .section h2,.contact-banner h2{font-size:1.9rem;line-height:1.17;margin-bottom:18px}
+  .section-copy .lead{font-size:1.02rem}
+  .section-heading{margin-bottom:30px}
+  .service-grid,.steps{gap:14px}
+  .service-card{padding:22px 20px}
+  .card-number{font-size:1.8rem}
+  .service-card h3,.step h3{font-size:1.08rem}
+  .service-card p,.step p{font-size:.88rem}
+  .step{padding:24px 20px}
+  .step>span{font-size:2.5rem}
+  .contact-banner{padding:58px 20px}
+  .site-footer{padding:34px 20px 22px}
+}
+@media(max-width:380px){
+  .hero{min-height:490px;padding-left:18px;padding-right:18px}
+  .hero h1{font-size:2rem}
+  .section{padding-left:18px;padding-right:18px}
+}
