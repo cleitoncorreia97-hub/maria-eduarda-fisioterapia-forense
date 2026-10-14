@@ -147,3 +147,10 @@ section[id]{position:relative}
   .hero:after{content:"";position:absolute;right:0;bottom:0;width:29%;height:18%;background:var(--cream);clip-path:polygon(100% 0,100% 100%,0 100%);z-index:0}
 }
 @media(max-width:380px){.hero{background-size:auto 78%}}
+/* Mais respiro e alinhamento superior para o conteúdo da abertura móvel */
+@media(max-width:640px){
+  .hero-content{margin:clamp(64px,10svh,86px) 0 0}
+  .hero .eyebrow{margin-bottom:22px}
+  .hero h1{margin-bottom:20px}
+  .hero-copy{margin-bottom:28px}
+}
