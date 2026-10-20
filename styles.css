@@ -373,6 +373,7 @@ section[id]{position:relative}
   .contact-actions{padding-left:clamp(32px,4vw,64px);border-left:1px solid rgba(220,190,126,.38)}
   .contact-banner .contact-intro{max-width:510px;margin-bottom:28px}
   .contact-banner .button-light{width:100%;max-width:510px;min-height:62px}
+  .hero .button-light{width:100%;max-width:510px;min-height:62px}
   .contact-email{margin-top:24px}
   .contact-tagline{margin:34px 0 14px}
 }
