@@ -397,3 +397,5 @@ section[id]{position:relative}
   .hero .button-light{max-width:min(100%,250px);min-height:36px;padding:5px 7px;font-size:.48rem;gap:5px}
   .hero .whatsapp-icon{width:16px;height:16px;padding-right:5px}
 }
+
+.services-intro:after{display:none!important}
