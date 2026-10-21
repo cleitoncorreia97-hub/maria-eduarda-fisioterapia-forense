@@ -399,3 +399,6 @@ section[id]{position:relative}
 }
 
 .services-intro:after{display:none!important}
+
+.services-intro .advocacy-callout{max-width:700px;margin:16px 0 7px;color:var(--forest);font:600 clamp(1.1rem,2vw,1.35rem)/1.35 var(--serif)}
+.services-intro .advocacy-explanation{max-width:610px;margin:0;color:#647069;font-size:clamp(.9rem,1.25vw,1rem);line-height:1.55}
