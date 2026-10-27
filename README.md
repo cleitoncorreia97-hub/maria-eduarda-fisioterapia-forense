@@ -14,3 +14,6 @@ Abra `index.html` no navegador. Para editar, abra esta pasta no VS Code.
 - Aprovação final dos textos e imagens.
 
 O logo enviado foi incluído em `assets/logo-maria-eduarda.jpeg`. O contato ainda está como pendência e não direciona para um canal inexistente.
+
+## Estilos e desempenho
+Os estilos ficam no bloco `<style>` de `index.html`, evitando uma requisição bloqueante para CSS. Edite esse bloco para alterar o visual. As fontes WOFF2 ficam em `assets/fonts/`, com suas licenças, e são pré-carregadas no HTML. As declarações `@font-face` usam `font-display: swap`. O JavaScript usa `defer`.
